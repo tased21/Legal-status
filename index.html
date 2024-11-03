@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- Font awesome Icons -->
+    <script src="https://kit.fontawesome.com/359658240f.js" crossorigin="anonymous"></script>
     <!-- CSS Styles -->
     <style>
         .font-eb-garamond {
@@ -27,11 +29,183 @@
 </head>
 
 <body>
+<!-- header section -->
     <header>
-        
+    <!-- Nav Section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>Services<i class="fa-solid fa-chevron-right"></i></a>
+                  </li>
+                  <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                  <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                  <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+              </div>
+              <img src="images/logo2.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                  <li>
+                    <a>Services<i class="fa-solid fa-chevron-right"></i></a>
+                  </li>
+                  <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                  <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                  <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-primary bg-[#b7782d] text-white hover:bg-[#B68C5A] border-black">Free Consultation</a>
+            </div>
+        </div> 
+    <!-- Banner Section -->
+        <section class="mt-20 container mx-auto">
+            <div
+            class="hero min-h-screen"
+            style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-md">
+                <h1 class="mb-5 font-eb-garamond text-7xl font-extra-bold">We Provide Effective Legal Solutions</h1>
+                <p class="mb-5 font-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="flex gap-5">
+                    <input type="text" placeholder="Search Your Services" class="w-[500px] h-16 p-5 rounded-xl bg-white">
+                <button class="btn btn-primary bg-[#b7782d] text-white hover:bg-[#B68C5A] w-[150px] h-[64px]">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </header>
+<!-- Main Section -->
     <main>
-
+<!-- Legal practice -->
+        <section class="mt-32">
+            <div>
+                <h3 class="font-eb-garamond font-extrabold text-4xl text-center">The Legal Practice Area</h3>
+                <p class="font-poppins text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="mt-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!--First Practice  -->
+                <div class="card bg-base-100 w-96 shadow-xl text-center pr-5">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="images/business.png"
+                        alt="Business"
+                         />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="font-eb-garamond font-extrabold text-3xl">Business Law</h2>
+                      <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary rounded-full bg-[#b7782d] hover:bg-[#B68C5A] border-none"><i class="fa-solid fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                </div>
+                <!--Second Practice  -->
+                <div class="card bg-base-100 w-96 shadow-xl text-center pr-5">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="images/criminal.png"
+                        alt="criminal"
+                        />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="font-eb-garamond font-extrabold text-3xl">Criminal Law</h2>
+                      <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary rounded-full bg-[#b7782d] hover:bg-[#B68C5A] border-none"><i class="fa-solid fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                </div>
+                <!--Third Practice  -->
+                <div class="card bg-base-100 w-96 shadow-xl text-center pr-5">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="images/child.png"
+                        alt="child"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="font-eb-garamond font-extrabold text-3xl">Child Support</h2>
+                      <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary rounded-full bg-[#b7782d] hover:bg-[#B68C5A] border-none"><i class="fa-solid fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                </div>
+                <!--Fourth Practice  -->
+                <div class="card bg-base-100 w-96 shadow-xl text-center pr-5">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="images/education.png"
+                        alt="education"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="font-eb-garamond font-extrabold text-3xl">Education Law</h2>
+                      <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary rounded-full bg-[#b7782d] hover:bg-[#B68C5A] border-none"><i class="fa-solid fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                </div>
+                <!--Fifth Practice  -->
+                <div class="card bg-base-100 w-96 shadow-xl text-center pr-5">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="images/divorce.png"
+                        alt="Divorce"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="font-eb-garamond font-extrabold text-3xl">Divorce Law</h2>
+                      <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary rounded-full bg-[#b7782d] hover:bg-[#B68C5A] border-none"><i class="fa-solid fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                </div>
+                <!--Sixth Practice  -->
+                <div class="card bg-base-100 w-96 shadow-xl text-center pr-5">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="images/tax.png"
+                        alt="Tax"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="font-eb-garamond font-extrabold text-3xl">Tax Law</h2>
+                      <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary rounded-full bg-[#b7782d] hover:bg-[#B68C5A] border-none"><i class="fa-solid fa-arrow-right"></i></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
